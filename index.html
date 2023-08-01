@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVD Animation</title>
+    <style>
+        body{
+            background-color: #000;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            box-sizing:  border-box;
+        }
+        .dvd-img{
+            height:100px;
+            width:100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(images/dvd-white.png);
+            margin: -2% -0.5%;
+            animation-name: moveDvd;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes moveDvd{
+            0%{transform: translate(0,0); background-image: url(images/dvd-white.png);}
+            10%{transform: translate(20vw,90vh);background-image: url(images/dvd-white.png);}
+            11%{background-image: url(images/dvd-blue.png);}
+            19%{background-image: url(images/dvd-blue.png);}
+            20%{transform: translate(40vw,0vh); background-image: url(images/dvd-blue.png);}
+            21%{background-image: url(images/dvd-cyan.png);}
+            29%{background-image: url(images/dvd-cyan.png);}
+            30%{transform: translate(92vw,40vh); background-image: url(images/dvd-cyan.png);}
+            31%{background-image: url(images/dvd-green.png);}
+            39%{background-image: url(images/dvd-green.png);}
+            40%{transform: translate(70vw,90vh); background-image: url(images/dvd-green.png);}
+            41%{background-image: url(images/dvd-orange.png);}
+            49%{background-image: url(images/dvd-orange.png);}
+            50%{transform: translate(0vw,60vh); background-image: url(images/dvd-orange.png);}
+            51%{background-image: url(images/dvd-yellow.png);}
+            59%{background-image: url(images/dvd-yellow.png);}
+            60%{transform: translate(20vw,90vh); background-image: url(images/dvd-yellow.png);}
+            61%{background-image: url(images/dvd-purple.png);}
+            69%{background-image: url(images/dvd-purple.png);}
+            70%{transform: translate(50vw,0vh); background-image: url(images/dvd-purple.png);}
+            71%{background-image: url(images/dvd-red.png);}
+            79%{background-image: url(images/dvd-red.png);}
+            80%{transform: translate(92vw,10vh); background-image: url(images/dvd-red.png);}
+            81%{background-image: url(images/dvd-white.png);}
+            89%{background-image: url(images/dvd-white.png);}
+            90%{transform: translate(85vw,90vh); background-image: url(images/dvd-white.png);}
+            91%{background-image: url(images/dvd-green.png);}
+            100%{transform: translate(0,0); background-image: url(images/dvd-green.png);}
+        }
+    </style>
+</head>
+<body>
+    <div class="dvd-img"></div>
+</body>
+</html>
